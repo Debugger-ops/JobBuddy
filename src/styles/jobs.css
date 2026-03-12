@@ -1,0 +1,79 @@
+.jobs-header h2 {
+  @apply text-2xl font-bold;
+}
+
+.jobs-header p {
+  @apply text-muted-foreground mt-1;
+}
+
+.jobs-toolbar {
+  @apply flex gap-3 flex-wrap;
+}
+
+.jobs-search {
+  @apply relative flex-1 min-w-[200px];
+}
+
+.jobs-search-icon {
+  @apply absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground;
+}
+
+.job-card {
+  @apply glass-card rounded-xl p-5 flex items-start justify-between gap-4;
+}
+
+.job-card-body {
+  @apply flex-1 min-w-0;
+}
+
+.job-card-title-row {
+  @apply flex items-center gap-3 mb-1;
+}
+
+.job-card-title {
+  @apply font-semibold truncate;
+}
+
+.job-status-badge {
+  @apply text-xs font-medium px-2.5 py-1 rounded-full shrink-0;
+}
+
+.job-card-company {
+  @apply text-sm text-muted-foreground;
+}
+
+.job-card-salary {
+  @apply text-sm font-medium mt-1;
+}
+
+.job-card-notes {
+  @apply text-xs text-muted-foreground mt-2 line-clamp-2;
+}
+
+.job-card-meta {
+  @apply text-xs text-muted-foreground/60 mt-2 flex items-center gap-3;
+}
+
+.job-card-deadline {
+  @apply text-warning font-medium;
+}
+
+.job-card-actions {
+  @apply flex items-center gap-2 shrink-0;
+}
+
+.job-action-btn {
+  @apply p-2 rounded-lg hover:bg-accent transition-colors;
+}
+
+.job-delete-btn {
+  @apply p-2 rounded-lg hover:bg-destructive/10 transition-colors;
+}
+
+.jobs-empty {
+  @apply glass-card rounded-xl p-12 text-center;
+}
+
+.export-btn {
+  @apply flex items-center gap-2;
+}
