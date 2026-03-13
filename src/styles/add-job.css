@@ -1,0 +1,45 @@
+/* Add Job Container */
+.add-job-container {
+  max-width: 36rem; /* max-w-xl */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+}
+
+/* Add Job Header */
+.add-job-header h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+}
+
+.add-job-header p {
+  color: rgba(var(--muted-foreground), 1); /* text-muted-foreground */
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Add Job Form */
+.add-job-form {
+  background-color: rgba(var(--card), 0.8); /* glass-card */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 1.5rem; /* p-6 */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* space-y-5 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Form Grid */
+.add-job-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid-cols-2 */
+  gap: 1rem; /* gap-4 */
+}
+
+/* Form Actions */
+.add-job-actions {
+  display: flex;
+  gap: 0.75rem; /* gap-3 */
+  padding-top: 0.5rem; /* pt-2 */
+}

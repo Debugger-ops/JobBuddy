@@ -1,0 +1,162 @@
+/* Jobs Header */
+.jobs-header h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+}
+
+.jobs-header p {
+  color: rgba(var(--muted-foreground), 1); /* text-muted-foreground */
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Toolbar */
+.jobs-toolbar {
+  display: flex;
+  gap: 0.75rem; /* gap-3 */
+  flex-wrap: wrap;
+}
+
+/* Search */
+.jobs-search {
+  position: relative;
+  flex: 1; /* flex-1 */
+  min-width: 200px; /* min-w-[200px] */
+}
+
+.jobs-search-icon {
+  position: absolute;
+  left: 0.75rem; /* left-3 */
+  top: 50%; /* top-1/2 */
+  transform: translateY(-50%); /* -translate-y-1/2 */
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  color: rgba(var(--muted-foreground), 1);
+}
+
+/* Job Card */
+.job-card {
+  background-color: rgba(var(--card), 0.8); /* glass-card */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 1.25rem; /* p-5 */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem; /* gap-4 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.job-card-body {
+  flex: 1; /* flex-1 */
+  min-width: 0;
+}
+
+/* Job Card Title Row */
+.job-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.job-card-title {
+  font-weight: 600; /* font-semibold */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* truncate */
+}
+
+/* Status Badge */
+.job-status-badge {
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500; /* font-medium */
+  padding: 0.25rem 0.625rem; /* py-1 px-2.5 */
+  border-radius: 9999px; /* rounded-full */
+  flex-shrink: 0;
+}
+
+/* Company and Salary */
+.job-card-company {
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(var(--muted-foreground), 1);
+}
+
+.job-card-salary {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Notes */
+.job-card-notes {
+  font-size: 0.75rem; /* text-xs */
+  color: rgba(var(--muted-foreground), 1);
+  margin-top: 0.5rem; /* mt-2 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Meta and Deadline */
+.job-card-meta {
+  font-size: 0.75rem; /* text-xs */
+  color: rgba(var(--muted-foreground), 0.6); /* /60 */
+  margin-top: 0.5rem; /* mt-2 */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+}
+
+.job-card-deadline {
+  color: hsl(var(--warning));
+  font-weight: 500; /* font-medium */
+}
+
+/* Actions */
+.job-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  flex-shrink: 0;
+}
+
+.job-action-btn {
+  padding: 0.5rem; /* p-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.job-action-btn:hover {
+  background-color: rgba(var(--accent), 1); /* hover:bg-accent */
+}
+
+.job-delete-btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.job-delete-btn:hover {
+  background-color: rgba(var(--destructive), 0.1);
+}
+
+/* Empty Jobs State */
+.jobs-empty {
+  background-color: rgba(var(--card), 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 3rem; /* p-12 */
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Export Button */
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+}

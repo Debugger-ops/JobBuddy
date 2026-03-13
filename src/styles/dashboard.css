@@ -1,0 +1,160 @@
+/* Dashboard Header */
+.dashboard-header h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+}
+
+.dashboard-header p {
+  color: rgba(var(--muted-foreground), 1); /* text-muted-foreground */
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid-cols-2 */
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 1024px) { /* lg:grid-cols-5 */
+  .stats-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* Stat Card */
+.stat-card {
+  background-color: rgba(var(--card), 0.8); /* glass-card */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 1rem; /* p-4 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Stat Icon */
+.stat-icon {
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+  border-radius: 0.5rem; /* rounded-lg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem; /* mb-3 */
+}
+
+/* Stat Value & Label */
+.stat-value {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+}
+
+.stat-label {
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(var(--muted-foreground), 1);
+}
+
+/* Summary Grid */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 */
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) { /* md:grid-cols-2 */
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Summary Card */
+.summary-card {
+  background-color: rgba(var(--card), 0.8); /* glass-card */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 1.5rem; /* p-6 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.summary-card h3 {
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.summary-card .big-number {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  background: linear-gradient(to right, hsl(var(--primary)), #60a5fa); /* gradient-text */
+  
+  -webkit-text-fill-color: transparent;
+}
+
+.summary-card .sub-text {
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(var(--muted-foreground), 1);
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Reminders Section */
+.reminders-section {
+  background-color: rgba(var(--card), 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 1.5rem; /* p-6 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.reminder-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(var(--border), 0.5);
+}
+
+.reminder-item:last-child {
+  border-bottom: 0;
+}
+
+/* Reminder Badge */
+.reminder-badge {
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500;
+  padding: 0.25rem 0.5rem; /* py-1 px-2 */
+  border-radius: 9999px; /* rounded-full */
+}
+
+/* Reminder types */
+.reminder-urgent {
+  background-color: rgba(var(--destructive), 0.1);
+  color: hsl(var(--destructive));
+}
+
+.reminder-soon {
+  background-color: rgba(var(--warning), 0.1);
+  color: hsl(var(--warning));
+}
+
+.reminder-normal {
+  background-color: rgba(var(--primary), 0.1);
+  color: hsl(var(--primary));
+}
+
+/* Analytics Section */
+.analytics-section {
+  background-color: rgba(var(--card), 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Chart */
+.analytics-chart {
+  width: 100%;
+  height: 16rem; /* h-64 */
+}

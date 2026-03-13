@@ -1,0 +1,90 @@
+/* Profile container */
+.profile-container {
+  max-width: 36rem; /* max-w-xl */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+}
+
+/* Profile header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-header h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+}
+
+.profile-header p {
+  color: rgba(var(--muted-foreground), 1); /* text-muted-foreground */
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Profile form */
+.profile-form {
+  background-color: rgba(var(--card), 0.8); /* glass-card effect */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 1.5rem; /* p-6 */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* space-y-5 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Profile grid */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid-cols-2 */
+  gap: 1rem; /* gap-4 */
+}
+
+/* Skills input row */
+.skills-input-row {
+  display: flex;
+  gap: 0.5rem; /* gap-2 */
+}
+
+/* Skills tags */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* gap-2 */
+  margin-top: 0.5rem; /* mt-2 */
+}
+
+/* Resume upload area */
+.resume-upload-area {
+  border: 2px dashed hsl(var(--border));
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1.5rem; /* p-6 */
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.resume-upload-area:hover {
+  border-color: rgba(var(--primary), 0.5);
+}
+
+.resume-upload-area.dragging {
+  border-color: hsl(var(--primary));
+  background-color: rgba(var(--primary), 0.05);
+}
+
+/* Resume file info */
+.resume-file-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+  padding: 0.75rem; /* p-3 */
+  background-color: rgba(var(--accent), 0.5);
+  border-radius: 0.5rem; /* rounded-lg */
+}
+.resume-file-info:hover {
+  background-color: rgba(var(--accent), 0.7);
+}

@@ -1,0 +1,115 @@
+/* Auth Page Container */
+.auth-page {
+  min-height: 100vh; /* min-h-screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(var(--background));
+  padding: 1rem; /* p-4 */
+}
+
+/* Auth Card */
+.auth-card {
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space-y-8 */
+}
+
+/* Auth Header */
+.auth-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space-y-2 */
+}
+
+.auth-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: -0.015em; /* tracking-tight equivalent */
+}
+
+.auth-subtitle {
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(var(--muted-foreground), 1);
+}
+
+/* Auth Form */
+.auth-form {
+  background-color: rgba(var(--card), 0.8); /* glass-card */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(var(--border), 0.5);
+  border-radius: 1rem; /* rounded-xl */
+  padding: 2rem; /* p-8 */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* space-y-5 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Divider */
+.auth-divider {
+  position: relative;
+  margin-top: 1.5rem; /* my-6 */
+  margin-bottom: 1.5rem;
+}
+
+.auth-divider::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  border-top: 1px solid hsl(var(--border));
+  display: flex;
+  align-items: center;
+}
+
+.auth-divider-text {
+  position: relative;
+  background-color: hsl(var(--card));
+  padding: 0 0.75rem; /* px-3 */
+  font-size: 0.75rem; /* text-xs */
+  color: rgba(var(--muted-foreground), 1);
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+/* Auth Footer */
+.auth-footer {
+  text-align: center;
+  font-size: 0.875rem; /* text-sm */
+  color: rgba(var(--muted-foreground), 1);
+}
+
+.auth-link {
+  color: hsl(var(--primary));
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Google Button */
+.google-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* gap-2 */
+  padding: 0.625rem 1rem; /* py-2.5 px-4 */
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.google-btn:hover {
+  background-color: rgba(var(--accent), 1);
+}
