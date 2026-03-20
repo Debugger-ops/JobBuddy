@@ -1,0 +1,38 @@
+.add-job-container {
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.add-job-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.add-job-header p {
+  color: var(--muted-foreground);
+  margin-top: 0.25rem;
+}
+
+.add-job-form {
+  /* glass-card is a custom class — replicate its styles manually */
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.add-job-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.add-job-actions {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
