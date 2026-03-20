@@ -1,10 +1,11 @@
-// src/env.d.ts
+/// <reference types="vite/client" />
+
 interface ImportMetaEnv {
-  readonly VITE_SUPABASE_URL: string
-  readonly VITE_SUPABASE_ANON_KEY: string
-  // add other env variables you use starting with VITE_...
+  readonly VITE_SUPABASE_URL: string;
+  readonly VITE_SUPABASE_PUBLISHABLE_KEY: string;
+  readonly VITE_SUPABASE_ANON_KEY?: string; // fallback alias
 }
 
 interface ImportMeta {
-  readonly env: ImportMetaEnv
+  readonly env: ImportMetaEnv;
 }
