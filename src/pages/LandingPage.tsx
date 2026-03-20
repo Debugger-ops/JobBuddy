@@ -19,7 +19,7 @@ const STEPS = [
 ];
 
 const TESTIMONIALS = [
-  { initials: 'PM', name: 'Priya M.',  role: 'Product Designer · Notion', quote: 'Trackr turned my scattered job hunt into a real strategy. I landed my offer in 6 weeks — half the time it took me last year.' },
+  { initials: 'PM', name: 'Priya M.',  role: 'Product Designer · Notion', quote: 'JobBuddy turned my scattered job hunt into a real strategy. I landed my offer in 6 weeks — half the time it took me last year.' },
   { initials: 'AK', name: 'Arjun K.', role: 'Software Engineer · Stripe', quote: "The analytics showed me I was ghosted after the second interview every time. I fixed that specific stage and my close rate tripled." },
   { initials: 'SR', name: 'Sofia R.', role: 'Marketing Lead · Figma',     quote: 'I used to lose track of who I had followed up with. Now I have zero missed follow-ups and way less anxiety about the whole process.' },
 ];
