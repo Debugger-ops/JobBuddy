@@ -94,7 +94,7 @@ export default function AuthPage() {
               fontSize: '1.5rem', fontWeight: 800,
               color: '#0f172a', letterSpacing: '-0.02em'
             }}>
-              JobBuddy<span style={{ color: '#2563eb' }}>r</span>
+              Job<span style={{ color: '#2563eb' }}>Buddy</span>
             </span>
           </div>
 
