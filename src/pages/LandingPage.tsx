@@ -72,7 +72,7 @@ const LandingPage = () => {
       <nav className="nav">
         <a className="nav-logo" href="/">
           <div className="nav-logo-mark">🎯</div>
-          <span className="nav-logo-text">Track<span>r</span></span>
+          <span className="nav-logo-text">Job<span>Buddy</span></span>
         </a>
 
         <div className="nav-center">
@@ -167,7 +167,7 @@ const LandingPage = () => {
 
       {/* ── FEATURES ── */}
       <section className="features">
-        <p className="section-eyebrow">Why Trackr</p>
+        <p className="section-eyebrow">Why JobBuddy</p>
         <h2 className="section-title">Everything the job hunt demands</h2>
         <p className="section-sub">
           One workspace that covers the full arc of your search — from the first application to the signed offer.
@@ -189,7 +189,7 @@ const LandingPage = () => {
           <p className="section-eyebrow">How it works</p>
           <h2 className="section-title">Up and running in minutes</h2>
           <p className="section-sub">
-            No setup headaches. Just sign up, add your jobs, and let Trackr do the organising.
+            No setup headaches. Just sign up, add your jobs, and let JobBuddy do the organising.
           </p>
           <div className="steps-grid">
             {STEPS.map(s => (
@@ -230,7 +230,7 @@ const LandingPage = () => {
           <div className="cta-badge">✦ Free forever · No credit card</div>
           <h2 className="cta-title">Ready to take control of your search?</h2>
           <p className="cta-sub">
-            Join thousands of job seekers who land offers faster and with far less stress using Trackr.
+            Join thousands of job seekers who land offers faster and with far less stress using JobBuddy.
           </p>
           <div className="cta-btns">
             {user ? (
@@ -255,7 +255,7 @@ const LandingPage = () => {
       <footer className="footer">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="footer-logo-text">Track<span>r</span></div>
+            <div className="footer-logo-text">Job<span>Buddy</span></div>
             <p>A smarter way to manage your job search — from first application to signed offer.</p>
           </div>
           <div className="footer-links">
@@ -288,7 +288,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <span className="footer-copy">© 2026 Trackr. Built for job seekers, by job seekers.</span>
+          <span className="footer-copy">© 2026 JobBuudy. Built for job seekers, by job seekers.</span>
           <div className="footer-legal">
             <a>Privacy Policy</a>
             <a>Terms of Service</a>
